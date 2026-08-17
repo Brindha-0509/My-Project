@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew & Bean - Crafted Coffee. Warm Moments. Experience artisanal coffee, freshly roasted beans, and cozy vibes at our neighborhood café.">
+  <title>Brew & Bean | Crafted Coffee. Warm Moments.</title>
+
+  <!-- Google Fonts: Playfair Display for Headings, Plus Jakarta Sans for Body & UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       1. NAVBAR
+       ========================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Brew & Bean Home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-name">Brew &amp; Bean</span>
+          <span class="logo-sub">Artisanal Café</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#visit" class="nav-link">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#menu" class="btn btn-primary btn-nav">Order Now</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+        </span>
+        <span class="logo-name">Brew &amp; Bean</span>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+      <li><a href="#why-us" class="mobile-nav-link">Why Us</a></li>
+      <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+      <li><a href="#visit" class="mobile-nav-link">Visit Us</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#menu" class="btn btn-primary btn-block">Order Now</a>
+      <p class="drawer-contact-note">Open Daily: 7:00 AM – 9:00 PM</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================
+         2. HERO SECTION
+         ========================================================= -->
+    <section class="hero-section" id="home" aria-label="Welcome to Brew & Bean">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow animate-fade-in">
+            <span class="eyebrow-dot"></span>
+            <span>Handcrafted Coffee Experience</span>
+          </div>
+          <h1 class="hero-title animate-fade-in delay-1">
+            Crafted Coffee. <br>
+            <span class="highlight-text">Warm Moments.</span>
+          </h1>
+          <p class="hero-description animate-fade-in delay-2">
+            Every cup tells a story of passion, patience, and precision. We ethically source single-origin specialty beans and roast them to perfection for your everyday ritual.
+          </p>
+          <div class="hero-cta-group animate-fade-in delay-3">
+            <a href="#menu" class="btn btn-primary">
+              <span>Explore Menu</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#visit" class="btn btn-secondary">
+              <span>Visit Us</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges Strip -->
+          <div class="hero-badges animate-fade-in delay-4">
+            <div class="badge-item">
+              <span class="badge-number">100%</span>
+              <span class="badge-label">Arabica Specialty</span>
+            </div>
+            <div class="badge-divider"></div>
+            <div class="badge-item">
+              <span class="badge-number">4.9 ★</span>
+              <span class="badge-label">2,400+ Café Reviews</span>
+            </div>
+            <div class="badge-divider"></div>
+            <div class="badge-item">
+              <span class="badge-number">Daily</span>
+              <span class="badge-label">Small-Batch Roasting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual animate-scale-up">
+          <div class="hero-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" 
+              alt="Artisanal steaming latte with coffee beans in warm cafe atmosphere" 
+              class="hero-img"
+              loading="eager"
+            >
+            <!-- Floating Feature Pills -->
+            <div class="hero-float-card card-top">
+              <div class="float-icon">☕</div>
+              <div class="float-info">
+                <span class="float-title">Signature Blend</span>
+                <span class="float-meta">Freshly Brewed Today</span>
+              </div>
+            </div>
+            <div class="hero-float-card card-bottom">
+              <div class="float-icon">✨</div>
+              <div class="float-info">
+                <span class="float-title">Barista Crafted</span>
+                <span class="float-meta">Silky Microfoam Texture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. ABOUT / INTRODUCTION
+         ========================================================= -->
+    <section class="about-section section-padding" id="about" aria-label="About Brew & Bean">
+      <div class="container about-container">
+        <div class="about-visual reveal-item">
+          <div class="about-image-frame">
+            <img 
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" 
+              alt="Barista carefully pouring artisanal filter coffee" 
+              class="about-img"
+              loading="lazy"
+            >
+            <div class="about-experience-badge">
+              <span class="exp-years">10+</span>
+              <span class="exp-text">Years of Coffee Passion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-item">
+          <span class="section-tag">About Our Café</span>
+          <h2 class="section-title">Brewing Pure Passion in Every Single Cup</h2>
+          <p class="about-lead">
+            Founded with a deep love for authentic coffee culture, Brew &amp; Bean is a warm neighborhood sanctuary where craft meets community.
+          </p>
+          <p class="about-text">
+            We partner directly with sustainable, high-altitude farms across Colombia, Ethiopia, and Guatemala. Every batch of specialty beans is roasted with precision in-house to unlock rich, complex tasting notes—from velvety chocolate to bright citrus florals.
+          </p>
+          <p class="about-text">
+            Whether you need a calm corner to read, a quiet spot to focus, or an uplifting morning espresso with friendly faces, our doors are always open for you.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-pill">
+              <span class="pill-check">✓</span>
+              <span>Direct-Trade Sourcing</span>
+            </div>
+            <div class="highlight-pill">
+              <span class="pill-check">✓</span>
+              <span>Organic Dairy &amp; Plant Milks</span>
+            </div>
+            <div class="highlight-pill">
+              <span class="pill-check">✓</span>
+              <span>Artisan Pastries Baked Daily</span>
+            </div>
+          </div>
+
+          <div class="about-action">
+            <a href="#why-us" class="btn btn-outline">Our Story &amp; Craft</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. FEATURED COFFEE
+         ========================================================= -->
+    <section class="featured-section section-padding" id="menu" aria-label="Featured Coffee Menu">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Signature Selection</span>
+          <h2 class="section-title">Our Featured Coffee</h2>
+          <p class="section-subtitle">
+            Handcrafted with precision by our certified baristas using our signature espresso blend.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Item 1: Classic Cappuccino -->
+          <article class="coffee-card reveal-item">
+            <div class="coffee-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" 
+                alt="Classic Cappuccino with velvety foam art" 
+                class="coffee-img"
+                loading="lazy"
+              >
+              <span class="coffee-badge">Best Seller</span>
+            </div>
+            <div class="coffee-info">
+              <div class="coffee-title-row">
+                <h3 class="coffee-name">Classic Cappuccino</h3>
+                <span class="coffee-price">₹149</span>
+              </div>
+              <p class="coffee-desc">
+                Double shot of rich espresso topped with equal parts steamed milk and a thick, velvety crown of foam.
+              </p>
+              <div class="coffee-footer">
+                <span class="coffee-notes">Notes: Dark Chocolate &amp; Hazelnut</span>
+                <a href="#visit" class="coffee-order-btn" aria-label="Order Classic Cappuccino">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Caramel Latte -->
+          <article class="coffee-card reveal-item">
+            <div class="coffee-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=700&q=80" 
+                alt="Caramel Latte with caramel drizzle" 
+                class="coffee-img"
+                loading="lazy"
+              >
+              <span class="coffee-badge">Favorite</span>
+            </div>
+            <div class="coffee-info">
+              <div class="coffee-title-row">
+                <h3 class="coffee-name">Caramel Latte</h3>
+                <span class="coffee-price">₹179</span>
+              </div>
+              <p class="coffee-desc">
+                Smooth espresso layered with silky textured milk, house-made salted caramel syrup, and a delicate drizzle.
+              </p>
+              <div class="coffee-footer">
+                <span class="coffee-notes">Notes: Salted Caramel &amp; Vanilla</span>
+                <a href="#visit" class="coffee-order-btn" aria-label="Order Caramel Latte">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Velvet Mocha -->
+          <article class="coffee-card reveal-item">
+            <div class="coffee-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=700&q=80" 
+                alt="Velvet Mocha with chocolate dust" 
+                class="coffee-img"
+                loading="lazy"
+              >
+              <span class="coffee-badge">Popular</span>
+            </div>
+            <div class="coffee-info">
+              <div class="coffee-title-row">
+                <h3 class="coffee-name">Velvet Mocha</h3>
+                <span class="coffee-price">₹189</span>
+              </div>
+              <p class="coffee-desc">
+                Artisanal dark Belgian cocoa melted into intense espresso and steamed milk, finished with organic chocolate dust.
+              </p>
+              <div class="coffee-footer">
+                <span class="coffee-notes">Notes: Belgian Cocoa &amp; Sweet Roast</span>
+                <a href="#visit" class="coffee-order-btn" aria-label="Order Velvet Mocha">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Signature Espresso -->
+          <article class="coffee-card reveal-item">
+            <div class="coffee-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80" 
+                alt="Signature Espresso with golden crema" 
+                class="coffee-img"
+                loading="lazy"
+              >
+              <span class="coffee-badge">Classic</span>
+            </div>
+            <div class="coffee-info">
+              <div class="coffee-title-row">
+                <h3 class="coffee-name">Signature Espresso</h3>
+                <span class="coffee-price">₹169</span>
+              </div>
+              <p class="coffee-desc">
+                A pristine, full-bodied double shot pulled to precision, showcasing a golden crema and lingering aromatic finish.
+              </p>
+              <div class="coffee-footer">
+                <span class="coffee-notes">Notes: Toasted Almond &amp; Berry</span>
+                <a href="#visit" class="coffee-order-btn" aria-label="Order Signature Espresso">Order Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. WHY CHOOSE US
+         ========================================================= -->
+    <section class="why-section section-padding" id="why-us" aria-label="Why Choose Brew & Bean">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">The Brew &amp; Bean Standard</span>
+          <h2 class="section-title">Why Coffee Lovers Choose Us</h2>
+          <p class="section-subtitle">
+            We obsess over every detail so you can enjoy an exceptional coffee experience every visit.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1: Freshly Roasted Beans -->
+          <div class="why-card reveal-item">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9z"></path>
+                <path d="M12 2c-3.5 3.5-3.5 10.5 0 14"></path>
+                <path d="M12 16c3.5-3.5 3.5-10.5 0-14"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Freshly Roasted Beans</h3>
+            <p class="why-desc">
+              We roast our single-origin and specialty blends weekly in small batches, ensuring peak freshness, aromatic aroma, and rich flavor complexity in every single cup.
+            </p>
+          </div>
+
+          <!-- Card 2: Expert Baristas -->
+          <div class="why-card reveal-item">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 2v6a6 6 0 0 0 12 0V2"></path>
+                <line x1="6" y1="2" x2="18" y2="2"></line>
+                <line x1="12" y1="14" x2="12" y2="22"></line>
+                <line x1="8" y1="22" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="why-title">Expert Baristas</h3>
+            <p class="why-desc">
+              Our team consists of passionate, certified coffee artisans who master grinder calibration, temperature profiling, extraction chemistry, and beautiful latte art.
+            </p>
+          </div>
+
+          <!-- Card 3: Cozy Atmosphere -->
+          <div class="why-card reveal-item">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"></path>
+                <path d="M9 22V12h6v10"></path>
+                <path d="M2 10.6L12 2l10 8.6"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Cozy Atmosphere</h3>
+            <p class="why-desc">
+              Thoughtfully curated warm lighting, comfortable seating, acoustic playlists, and high-speed Wi-Fi create the perfect ambient space for conversation or creative work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. SPECIAL OFFER
+         ========================================================= -->
+    <section class="offer-section" aria-label="Special Promotion">
+      <div class="container">
+        <div class="offer-card reveal-item">
+          <div class="offer-content">
+            <span class="offer-badge">Limited Time Welcome Treat</span>
+            <h2 class="offer-title">Make Your Morning Better – 20% Off Your First Coffee</h2>
+            <p class="offer-text">
+              Join us for your morning ritual. Mention code <strong class="offer-code">BREW20</strong> at the counter or show this offer to receive 20% off any handcrafted beverage.
+            </p>
+            <div class="offer-cta-wrap">
+              <a href="#visit" class="btn btn-primary btn-large">Order Now</a>
+              <span class="offer-note">Valid in-store every morning until 11:30 AM</span>
+            </div>
+          </div>
+          <div class="offer-graphic" aria-hidden="true">
+            <div class="offer-circle">
+              <span class="offer-percent">20%</span>
+              <span class="offer-off">OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CUSTOMER REVIEWS
+         ========================================================= -->
+    <section class="reviews-section section-padding" id="reviews" aria-label="Customer Testimonials">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Community Love</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <p class="section-subtitle">
+            Real stories from our wonderful neighborhood community of coffee enthusiasts.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card reveal-item">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="review-quote">
+              “The Caramel Latte here has completely redefined my morning routine. The atmosphere is warm, calming, and the baristas remember my name and order every single time!”
+            </p>
+            <div class="reviewer-meta">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                alt="Portrait of Sophia Vance" 
+                class="reviewer-avatar"
+                loading="lazy"
+              >
+              <div class="reviewer-info">
+                <h4 class="reviewer-name">Sophia Vance</h4>
+                <span class="reviewer-title">Daily Regular · Architect</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card reveal-item">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="review-quote">
+              “As someone who works remotely, finding a café with exceptional single-origin espresso, great Wi-Fi, and a relaxed cozy vibe is rare. Brew &amp; Bean is simply the best in town.”
+            </p>
+            <div class="reviewer-meta">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
+                alt="Portrait of Marcus Chen" 
+                class="reviewer-avatar"
+                loading="lazy"
+              >
+              <div class="reviewer-info">
+                <h4 class="reviewer-name">Marcus Chen</h4>
+                <span class="reviewer-title">Coffee Connoisseur · Designer</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card reveal-item">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="review-quote">
+              “Their classic cappuccino has the smoothest microfoam I have ever tasted outside of Italy. You can taste the care and craftsmanship in every single sip. Highly recommended!”
+            </p>
+            <div class="reviewer-meta">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" 
+                alt="Portrait of Elena Rostova" 
+                class="reviewer-avatar"
+                loading="lazy"
+              >
+              <div class="reviewer-info">
+                <h4 class="reviewer-name">Elena Rostova</h4>
+                <span class="reviewer-title">Food &amp; Lifestyle Blogger</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. VISIT US
+         ========================================================= -->
+    <section class="visit-section section-padding" id="visit" aria-label="Visit Our Café">
+      <div class="container">
+        <div class="visit-wrapper reveal-item">
+          <!-- Left: Information Column -->
+          <div class="visit-info-col">
+            <span class="section-tag">Come On In</span>
+            <h2 class="section-title">Visit Our Café</h2>
+            <p class="visit-intro">
+              We look forward to brewing something extraordinary for you. Drop by for a morning pick-me-up or an afternoon unwind.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Location -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4 class="detail-label">Café Location</h4>
+                  <p class="detail-val">Anna Nagar,Chennai,Tamil Nadu </p>
+                </div>
+              </div>
+
+              <!-- Opening Hours -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4 class="detail-label">Opening Hours</h4>
+                  <p class="detail-val">
+                    <strong>Monday – Friday:</strong> 6:30 AM – 8:00 PM<br>
+                    <strong>Saturday – Sunday:</strong> 7:30 AM – 9:00 PM
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone & Email -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4 class="detail-label">Phone Number</h4>
+                  <p class="detail-val"><a href="tel:+91 9000000000" class="detail-link">+91 9000000000</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4 class="detail-label">Email Address</h4>
+                  <p class="detail-val"><a href="mailto:hello@brewandbean.com" class="detail-link">hello@brewandbean.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="visit-action-wrap">
+              <a 
+                href="https://maps.google.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary"
+              >
+                <span>Get Directions</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Atmosphere Frame -->
+          <div class="visit-visual-col">
+            <div class="visit-image-card">
+              <img 
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" 
+                alt="Warm and welcoming interior of Brew & Bean café" 
+                class="visit-img"
+                loading="lazy"
+              >
+              <div class="visit-overlay-tag">
+                <span class="pulse-indicator"></span>
+                <span>Serving Hot Fresh Coffee Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       9. FOOTER
+       ========================================================= -->
+  <footer class="site-footer" id="contact" aria-label="Site Footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </span>
+            <span class="logo-name">Brew &amp; Bean</span>
+          </a>
+          <p class="footer-tagline">“Crafted Coffee. Warm Moments.”</p>
+          <p class="footer-description">
+            Your neighborhood roastery celebrating artisanal single-origin coffee, handcrafted beverages, and cozy hospitality.
+          </p>
+          <!-- Social Icons -->
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://instagram.com" class="social-icon" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="social-icon" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="social-icon" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col footer-links">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#menu" class="footer-link">Featured Menu</a></li>
+            <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+            <li><a href="#reviews" class="footer-link">Guest Reviews</a></li>
+            <li><a href="#visit" class="footer-link">Visit Café</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact & Hours -->
+        <div class="footer-col footer-contact">
+          <h4 class="footer-col-title">Contact &amp; Hours</h4>
+          <p class="footer-contact-item">
+            <strong>Address:</strong>Anna Nagar,Chennai,Tamil Nadu
+          </p>
+          <p class="footer-contact-item">
+            <strong>Phone:</strong> <a href="tel:+91 9000000000">+91 9000000000</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Email:</strong> <a href="mailto:hello@brewandbean.com">hello@brewandbean.com</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Mon – Fri:</strong> 6:30 AM – 8:00 PM<br>
+            <strong>Sat – Sun:</strong> 7:30 AM – 9:00 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="copyright-year">2026</span> Brew &amp; Bean. All rights reserved. Crafted with passion.
+        </p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
